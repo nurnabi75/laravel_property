@@ -57,7 +57,7 @@ class PropertyController extends Controller
      */
     public function edit($id)
     {
-        //
+        // edit
     }
 
     /**
