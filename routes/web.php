@@ -1,8 +1,10 @@
 <?php
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
-use App\Http\Controllers\Admin\PageController;
+use App\Http\Controllers\Admin\PageController as AdminPageController;
 use App\Http\Controllers\Admin\LocationController;
+
+use App\Http\Controllers\PageController;
 
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\ContactController;
@@ -54,7 +56,7 @@ Route::middleware(['auth'])->group(function(){
     Route::post('/dashboard/delete-media/{media_id}', [DashboardController::class, 'deleteMedia'])->name('delete-media');
 
     //page
-    Route::resource(  'dashboard-page', PageController::class);
+    Route::resource(  'dashboard-page', AdminPageController::class);
     //location
     Route::resource('dashboard-location', LocationController::class);
 });

@@ -8,6 +8,8 @@ use App\Models\Location;
 
 class NewPropertyController extends Controller
 {
+
+    
     //
     public function single($id){
         $property = NewProperty::findOrFail($id);

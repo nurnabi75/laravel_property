@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use App\Models\Location;
 use App\Models\NewProperty;
 use App\Models\Page;
-use App\Models\property;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cookie;
 //use phpDocumentor\Reflection\Location;
